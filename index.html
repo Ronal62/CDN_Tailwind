@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- <script>
         tailwind.config = {
             darkMode:'class',
             theme: {
@@ -37,13 +39,9 @@
                 },
             },
         };
-    </script>
+    </script> -->
     <title>Belajar Tailwind</title>
-    <style type="text/tailwindcss">
-        #toggle:checked ~ label div.toggle-circle {
-            @apply translate-x-4 
-        }
-    </style>
+    
 </head>
 
 <body class="dark:bg-slate-800 dark:text-slate-800">
@@ -70,7 +68,7 @@
 
     <section class=" font-inter max-w-3xl mx-auto">
         <h2 class="mb-2 text-4xl font-semibold">Belajar Mengenai Typography Pada Tailwindcss</h2>
-        <div class="mb-4 text-lg">By <a class="text-gray-700 font-semibold" href="">Ronald Budi</a>, 2 Februari 2023</div>
+        <div class="mb-4 text-lg md:aspect-[3/4]">By <a class="text-gray-700 font-semibold" href="">Ronald Budi</a>, 2 Februari 2023</div>
         <p class="mb-4">
             Lorem ipsum dolor sit amet <a class="underline font-semibold text-blue-600 " href=" ">consectetur</a>, adipisicing elit. Ea
             perspiciatis obcaecati vitae corrupti magni, molestias in, sed
@@ -182,19 +180,76 @@
     </div>
 
 
-    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-800">My Gallery</h2>
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-800 ">My Gallery</h2>
 
-    <div class="container mx-auto px-6 ">
-        <div class=" shadow-lg rounded">
+    <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly ">
+        <div class=" shadow-lg rounded overflow-hidden mb-10  sm:w-64 md:w-80 sm:mb-0 bg-white lg:w-72">
             <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full ">
-
+            <div class="px-6 py-4">
+                <div class="font-bold font-inter text-xl mb-2 text-slate-700">image Title</div>
+                <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, neque.</div>
+            </div>
+        </div>
+        <div class=" shadow-lg rounded overflow-hidden mb-10  sm:w-64 md:w-80 sm:mb-0 bg-white lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full ">
+            <div class="px-6 py-4">
+                <div class="font-bold font-inter text-xl mb-2 text-slate-700">image Title</div>
+                <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, neque.</div>
+            </div>
+        </div>
+        <div class=" shadow-lg rounded overflow-hidden mb-10  sm:w-64 md:w-80 sm:mb-0 bg-white lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full ">
+            <div class="px-6 py-4">
+                <div class="font-bold font-inter text-xl mb-2 text-slate-700">image Title</div>
+                <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, neque.</div>
+            </div>
+        </div>
+        <div class=" shadow-lg rounded overflow-hidden mb-10  sm:w-64 md:w-80 sm:mb-0 bg-white lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full ">
+            <div class="px-6 py-4">
+                <div class="font-bold font-inter text-xl mb-2 text-slate-700">image Title</div>
+                <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, neque.</div>
+            </div>
+        </div>
+        <div class=" shadow-lg rounded overflow-hidden mb-10  sm:w-64 md:w-80 sm:mb-0 bg-white lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full ">
+            <div class="px-6 py-4">
+                <div class="font-bold font-inter text-xl mb-2 text-slate-700">image Title</div>
+                <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, neque.</div>
+            </div>
         </div>
     </div>
 
 
+    <div class="mt-64 p2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 ">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to Ronald</span></h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@Ronald</span></div>
+
+        <div class="group grid-card "><div class="grid-card-img bg-[url('/img/grid/9.jpg')] "></div>
+    </div>
+        <div class="md:col-start-3 group grid-card"><div class="grid-card-img bg-[url('/img/grid/10.jpg')]   "></div>
+    </div>
+        <div class="group grid-card"><div class="grid-card-img bg-[url('/img/grid/1.jpg')] "></div>
+    </div>
+        <div class="group grid-card"><div class="grid-card-img bg-[url('/img/grid/2.jpg')] "></div>
+    </div>
+        <div class="group grid-card"><div class="grid-card-img bg-[url('/img/grid/3.jpg')] "></div>
+    </div>
+        <div class="group grid-card md:col-start-2 "><div class="grid-card-img bg-[url('/img/grid/4.jpg')]   "></div>
+    </div>
+        <div class="group grid-card md:col-start-4"><div class="grid-card-img bg-[url('/img/grid/5.jpg')] "></div>
+    </div>
+        <div class="group grid-card"><div class="grid-card-img bg-[url('/img/grid/6.jpg')] "></div>
+    </div>
+        <div class="group grid-card md:col-start-3"><div class="grid-card-img bg-[url('/img/grid/7.jpg')]   "></div>
+    </div>
+        <div class="group grid-card md:col-start-3" ><div class="grid-card-img bg-[url('/img/grid/8.jpg')] "></div>
+    </div>
+    </div>
+
     <div class="mb-96 "></div>
 
-    <div class="w-10 h-10 bg-sky-300 rounded-full flex fixed  bottom-5 right-0 -translate-x-1/2 cursor-pointer"><a href="#" class="text-xl m-auto ">🔝</a></div>
+    <div class="w-10 h-10 bg-sky-300 rounded-full flex fixed  bottom-15 right-0 -translate-x-1/2 cursor-pointer"><a href="#" class="text-xl m-auto ">🔝</a></div>
 
     <script>
         const checkbox = document.querySelector('#toggle');
